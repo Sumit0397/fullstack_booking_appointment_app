@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(57, 63, 70);
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+.main-container h1{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.form-container{
+    padding: 1rem;
+    width: 40%;
+    background-color: slategray;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+
+.form-control{
+    width: 80%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-control input,
+.form-control label{
+    display: block;
+    width: 100%;
+}
+
+.form-control input{
+    padding: 0.5rem;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form-control label{
+    margin-bottom: 0.4rem;
+}
+
+.btn{
+    width: 10rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.list-container{
+    width: 55%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-container li{
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    background-color: steelblue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.list-container button{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .form-container{
+        width: 80%;
+    }
+
+    .list-container{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .form-container{
+        width: 90%;
+    }
+
+    .form-control{
+        width: 85%;
+    }
+
+    .list-container{
+        width: 95%;
+    }
+
+    .list-container li{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+}
+
